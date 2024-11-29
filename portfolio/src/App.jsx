@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import { Navbar } from "./components";
-import { About, Contact, Home, Projects } from "./";
+import { Navbar } from "./components/Navbar.jsx";
+import { About, Contact, Home, Projects } from "./pages";
 
 const App = () => {
   return (
@@ -19,7 +19,6 @@ const App = () => {
                   <Route path='/projects' element={<Projects />} />
                   <Route path='/contact' element={<Contact />} />
                 </Routes>
-                <Footer />
               </>
             }
           />
